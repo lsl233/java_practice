@@ -5,8 +5,9 @@ public class Hello {
         System.out.println("hello");
         Scanner in = new Scanner(System.in);
         int price = 0;
+        int amount = 100;
         System.out.println(price);
         price = in.nextInt();
-        System.out.println("100-" + price + "=" + (100 - price));
+        System.out.println(amount + "-" + price + "=" + (amount - price));
     }
 }
