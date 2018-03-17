@@ -7,13 +7,19 @@ public class Recharge {
         double b = 0.5 + 0.5;
         System.out.println(b);
         System.out.println(Math.abs(a - b) < 1e-6);
-        Scanner in = new Scanner(System.in);
-        System.out.print("请投币：");
-        int amount = in.nextInt();
-        System.out.println("*************");
-        System.out.println("***票价10元***");
-        System.out.println("*************");
+        while (true) {
+            Scanner in = new Scanner(System.in);
+            System.out.print("请投币：");
+            int amount = in.nextInt();
+            if (amount >= 10) {
+                System.out.println("*************");
+                System.out.println("***票价10元***");
+                System.out.println("*************");
 
-        System.out.println("找零：" + (amount - 10));
+                System.out.println("找零：" + (amount - 10));
+            } else {
+                System.out.println("钱不够");
+            }
+        }
     }
 }
