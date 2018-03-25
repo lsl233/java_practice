@@ -19,6 +19,5 @@ public class Calc {
         inch = in.nextInt();
         System.out.println("foot:" + foot + "inch:" + inch);
         System.out.println((foot + inch / 12.0) * 0.3048);
-
     }
 }
